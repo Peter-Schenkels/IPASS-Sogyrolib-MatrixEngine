@@ -18,8 +18,7 @@
 class slave{
 
 private:
-
-    
+	
     hwlib::target::pin_in clk = hwlib::target::pin_in(hwlib::target::pins::d4);
     hwlib::target::pin_in mosi = hwlib::target::pin_in(hwlib::target::pins::d5);
     hwlib::target::pin_out miso = hwlib::target::pin_out(hwlib::target::pins::d6);
