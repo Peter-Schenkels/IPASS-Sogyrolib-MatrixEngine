@@ -30,7 +30,7 @@ int main() {
 	hwlib::wait_ms(100);
 	
 	gyro.wake();
-	hwlib::wait(100);
+	hwlib::wait_ms(100);
 
 	for (unsigned int i = 0; i < 3; i++){
 

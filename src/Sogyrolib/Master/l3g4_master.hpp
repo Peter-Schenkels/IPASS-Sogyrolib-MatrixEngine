@@ -137,13 +137,13 @@ public:
     /// Changes the scale of the gyroscope
     /// \Details
     /// This function is used to change the gyroscope scale to either 250, 500 or 2000. 
-    int set_scale(int scale){
+    void set_scale(int scale){
 
-        if (scale == 250){ return fast_read(40);}
+        if (scale == 250){ fast_read(40);}
 
-        else if(scale == 500){ return fast_read(42);}
+        else if(scale == 500){ fast_read(42);}
 
-        else if(scale == 2000){ return fast_read(44);}
+        else if(scale == 2000){ fast_read(44);}
 
     }
   
