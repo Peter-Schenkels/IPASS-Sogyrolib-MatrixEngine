@@ -1,0 +1,56 @@
+\hypertarget{l3g4200_8hpp}{}\section{src/\+Sogyrolib/\+Slave/l3g4200.hpp File Reference}
+\label{l3g4200_8hpp}\index{src/\+Sogyrolib/\+Slave/l3g4200.\+hpp@{src/\+Sogyrolib/\+Slave/l3g4200.\+hpp}}
+{\ttfamily \#include \char`\"{}hwlib.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i2c\+\_\+fast.\+hpp\char`\"{}}\newline
+Include dependency graph for l3g4200.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{l3g4200_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{l3g4200_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classl3g4200}{l3g4200}
+\begin{DoxyCompactList}\small\item\em interface for \hyperlink{classl3g4200}{l3g4200} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{l3g4200_8hpp_a90201d02d51f87225c6241b87262dde5}\label{l3g4200_8hpp_a90201d02d51f87225c6241b87262dde5}} 
+\#define {\bfseries S\+C\+A\+L\+E\+\_\+2000}~0x02
+\item 
+\mbox{\Hypertarget{l3g4200_8hpp_a37e121b2d226ccc3f403f2936aee8dd2}\label{l3g4200_8hpp_a37e121b2d226ccc3f403f2936aee8dd2}} 
+\#define {\bfseries S\+C\+A\+L\+E\+\_\+500}~0x01
+\item 
+\mbox{\Hypertarget{l3g4200_8hpp_a80f3c508fd5519d6e1a30d66499e9797}\label{l3g4200_8hpp_a80f3c508fd5519d6e1a30d66499e9797}} 
+\#define {\bfseries S\+C\+A\+L\+E\+\_\+250}~0x00
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{l3g4200_8hpp_afcc78e012c211becc80ee7d0a43c6edd}{threesixty} (double \&in, double \&out)
+\begin{DoxyCompactList}\small\item\em turns data into 360 degrees data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{l3g4200_8hpp_afcc78e012c211becc80ee7d0a43c6edd}\label{l3g4200_8hpp_afcc78e012c211becc80ee7d0a43c6edd}} 
+\index{l3g4200.\+hpp@{l3g4200.\+hpp}!threesixty@{threesixty}}
+\index{threesixty@{threesixty}!l3g4200.\+hpp@{l3g4200.\+hpp}}
+\subsubsection{\texorpdfstring{threesixty()}{threesixty()}}
+{\footnotesize\ttfamily void threesixty (\begin{DoxyParamCaption}\item[{double \&}]{in,  }\item[{double \&}]{out }\end{DoxyParamCaption})}
+
+
+
+turns data into 360 degrees data 
+
+This function turns givin data and minus data into 360 values for example -\/120 should become 240 and 450 should become 90. 

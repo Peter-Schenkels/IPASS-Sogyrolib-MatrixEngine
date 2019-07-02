@@ -1,0 +1,126 @@
+\hypertarget{classobstacle}{}\section{obstacle Class Reference}
+\label{classobstacle}\index{obstacle@{obstacle}}
+
+
+Solid Object with a start end point.  
+
+
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+
+
+Inheritance diagram for obstacle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classobstacle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for obstacle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{classobstacle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classobstacle_ac5d3684c209786d12571f8ad09445ffc}{obstacle} (int start\+\_\+x, int start\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Constructor of obstacle with only 1 position. \end{DoxyCompactList}\item 
+\hyperlink{classobstacle_af3e8b2149760b57bb9238f03bd1616b7}{obstacle} (int start\+\_\+x, int start\+\_\+y, bool passable)
+\begin{DoxyCompactList}\small\item\em Constructor of obstacle with only 1 position and if it\textquotesingle{}s solid. \end{DoxyCompactList}\item 
+\hyperlink{classobstacle_a39b2e95776adad7254a2fbe0239364a0}{obstacle} (int start\+\_\+x, int start\+\_\+y, int end\+\_\+x, int end\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Constructor of obstacle with 2 positions. \end{DoxyCompactList}\item 
+\hyperlink{classobstacle_a94dfef60582ffd9f6b08012d61bc4ad3}{obstacle} (int start\+\_\+x, int start\+\_\+y, int end\+\_\+x, int end\+\_\+y, bool passable)
+\begin{DoxyCompactList}\small\item\em Constructor of obstacle with 2 positions and if it\textquotesingle{}s solid. \end{DoxyCompactList}\item 
+void \hyperlink{classobstacle_af6a9bc32f4999fd9109eda04febdae40}{set\+\_\+pos} (int p\+\_\+start\+\_\+x, int p\+\_\+start\+\_\+y, int p\+\_\+end\+\_\+x, int p\+\_\+end\+\_\+y)
+\begin{DoxyCompactList}\small\item\em sets position of obstacle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobstacle_a497febf8720e8db38f0d4b385feb192d}\label{classobstacle_a497febf8720e8db38f0d4b385feb192d}} 
+int \hyperlink{classobstacle_a497febf8720e8db38f0d4b385feb192d}{get\+\_\+start\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em Returns start x details This function returns the start x value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobstacle_a0166e8c89c16c6c40f87fdae232d160b}\label{classobstacle_a0166e8c89c16c6c40f87fdae232d160b}} 
+int \hyperlink{classobstacle_a0166e8c89c16c6c40f87fdae232d160b}{get\+\_\+start\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em Returns start x details This function returns the start x value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobstacle_af51bb5ce1a36f954b39c667a82464046}\label{classobstacle_af51bb5ce1a36f954b39c667a82464046}} 
+int \hyperlink{classobstacle_af51bb5ce1a36f954b39c667a82464046}{get\+\_\+end\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em Returns end x details This function returns the end x value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobstacle_add9b03205e5ea6768d70357e9d3f7e08}\label{classobstacle_add9b03205e5ea6768d70357e9d3f7e08}} 
+int \hyperlink{classobstacle_add9b03205e5ea6768d70357e9d3f7e08}{get\+\_\+end\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em Returns end x details This function returns the end x value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classobstacle_a7eb291920f0286d4bb98b1b6a1e10bf2}\label{classobstacle_a7eb291920f0286d4bb98b1b6a1e10bf2}} 
+char \hyperlink{classobstacle_a7eb291920f0286d4bb98b1b6a1e10bf2}{get\+\_\+icon} ()
+\begin{DoxyCompactList}\small\item\em Returns icon details This function returns the icon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Solid Object with a start end point. 
+
+This class of an solid object with a start and end position. Normal entities cannot move through an obstacle. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classobstacle_ac5d3684c209786d12571f8ad09445ffc}\label{classobstacle_ac5d3684c209786d12571f8ad09445ffc}} 
+\index{obstacle@{obstacle}!obstacle@{obstacle}}
+\index{obstacle@{obstacle}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{obstacle()}{obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily obstacle\+::obstacle (\begin{DoxyParamCaption}\item[{int}]{start\+\_\+x,  }\item[{int}]{start\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of obstacle with only 1 position. 
+
+This constructor constructs obstacle with only 1 position \mbox{\Hypertarget{classobstacle_af3e8b2149760b57bb9238f03bd1616b7}\label{classobstacle_af3e8b2149760b57bb9238f03bd1616b7}} 
+\index{obstacle@{obstacle}!obstacle@{obstacle}}
+\index{obstacle@{obstacle}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{obstacle()}{obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily obstacle\+::obstacle (\begin{DoxyParamCaption}\item[{int}]{start\+\_\+x,  }\item[{int}]{start\+\_\+y,  }\item[{bool}]{passable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of obstacle with only 1 position and if it\textquotesingle{}s solid. 
+
+This constructor constructs obstacle with only 1 position and if it\textquotesingle{}s solid \mbox{\Hypertarget{classobstacle_a39b2e95776adad7254a2fbe0239364a0}\label{classobstacle_a39b2e95776adad7254a2fbe0239364a0}} 
+\index{obstacle@{obstacle}!obstacle@{obstacle}}
+\index{obstacle@{obstacle}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{obstacle()}{obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily obstacle\+::obstacle (\begin{DoxyParamCaption}\item[{int}]{start\+\_\+x,  }\item[{int}]{start\+\_\+y,  }\item[{int}]{end\+\_\+x,  }\item[{int}]{end\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of obstacle with 2 positions. 
+
+This constructor constructs obstacle with 2 positions \mbox{\Hypertarget{classobstacle_a94dfef60582ffd9f6b08012d61bc4ad3}\label{classobstacle_a94dfef60582ffd9f6b08012d61bc4ad3}} 
+\index{obstacle@{obstacle}!obstacle@{obstacle}}
+\index{obstacle@{obstacle}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{obstacle()}{obstacle()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily obstacle\+::obstacle (\begin{DoxyParamCaption}\item[{int}]{start\+\_\+x,  }\item[{int}]{start\+\_\+y,  }\item[{int}]{end\+\_\+x,  }\item[{int}]{end\+\_\+y,  }\item[{bool}]{passable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of obstacle with 2 positions and if it\textquotesingle{}s solid. 
+
+This constructor constructs obstacle with 2 position and if it\textquotesingle{}s solid 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classobstacle_af6a9bc32f4999fd9109eda04febdae40}\label{classobstacle_af6a9bc32f4999fd9109eda04febdae40}} 
+\index{obstacle@{obstacle}!set\+\_\+pos@{set\+\_\+pos}}
+\index{set\+\_\+pos@{set\+\_\+pos}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{set\+\_\+pos()}{set\_pos()}}
+{\footnotesize\ttfamily void obstacle\+::set\+\_\+pos (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+start\+\_\+x,  }\item[{int}]{p\+\_\+start\+\_\+y,  }\item[{int}]{p\+\_\+end\+\_\+x,  }\item[{int}]{p\+\_\+end\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets position of obstacle 
+
+This function sets the 2 postions of an obstacle 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Matrix\+Engine/\hyperlink{object_8h}{object.\+h}\end{DoxyCompactItemize}

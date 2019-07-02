@@ -1,0 +1,4 @@
+<map id="player" name="player">
+<area shape="rect" id="node2" href="$classentity.html" title="A visable entity. " alt="" coords="7,80,61,107"/>
+<area shape="rect" id="node3" href="$classobject.html" title="A void object with a position. " alt="" coords="5,5,63,32"/>
+</map>

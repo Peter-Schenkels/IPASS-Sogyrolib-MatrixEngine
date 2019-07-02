@@ -22,19 +22,19 @@ class physbox {
 /// \brief
 /// Calculates the next movent of entity
 /// \details
-/// This function calculates the next movement of the givin object in a givin scene.
+/// This function calculates the next movement of the given object in a given scene.
     void calculate_movement(entity & object, field & scene);
 
 /// \brief
 /// Calculates gravity on object
 /// \details
-/// This function calculates the gravity physics of the givin object in givin scene.
+/// This function calculates the gravity physics of the given object in given scene.
     void calculate_gravity(entity & object, field & scene );
 
 /// \brief
 /// Calculates bounce on object
 /// \details
-/// This function calculates if the givin object should be bouncing in givin scene
+/// This function calculates if the given object should be bouncing in given scene
     void calculate_bounce(entity & object, field & scene);
 
 };

@@ -1,0 +1,146 @@
+\hypertarget{classled__matrix}{}\section{led\+\_\+matrix Class Reference}
+\label{classled__matrix}\index{led\+\_\+matrix@{led\+\_\+matrix}}
+
+
+Interface for the M\+H7219 led matrix chip.  
+
+
+
+
+{\ttfamily \#include $<$led\+\_\+matrix.\+hpp$>$}
+
+
+
+Inheritance diagram for led\+\_\+matrix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classled__matrix__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for led\+\_\+matrix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classled__matrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classled__matrix_a4b06df3b2766cfde525f14e545d42178}{led\+\_\+matrix} (hwlib\+::spi\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+sclk\+\_\+mosi\+\_\+miso \&spi, hwlib\+::target\+::pin\+\_\+out \&cs)
+\begin{DoxyCompactList}\small\item\em Constructor of M\+H7219 interface. \end{DoxyCompactList}\item 
+void \hyperlink{classled__matrix_aaaf3d4913c14f5c4f3fda0bab4d2c2d7}{wake} ()
+\begin{DoxyCompactList}\small\item\em Wakes up the Led Matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classled__matrix_ac926b398f60702bf06e1c6582c04ed6e}{sleep} ()
+\begin{DoxyCompactList}\small\item\em Tugs in the Led Matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classled__matrix_a074e1d86a05e2e67a3c329d589b601b8}{flush} () override
+\begin{DoxyCompactList}\small\item\em the buffer to the Led Matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classled__matrix_a0916fce5a976a46da16204265332015f}{flush\+\_\+buffer} (uint8\+\_\+t buffer\mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em givin buffer to the Led Matrix \end{DoxyCompactList}\item 
+void \hyperlink{classled__matrix_af26ac982e5c74a357f5fe18e73b819e4}{clear\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em buffer \end{DoxyCompactList}\item 
+void \hyperlink{classled__matrix_ac92b3805e1af58f4591bf22402c11d7e}{clear} ()
+\begin{DoxyCompactList}\small\item\em Led Matrix Screen \end{DoxyCompactList}\item 
+void \hyperlink{classled__matrix_a97602fdecff69971987941e12bc52a0f}{number} (int number)
+\begin{DoxyCompactList}\small\item\em a number on Led Matrix \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for the M\+H7219 led matrix chip. 
+
+Interface for one M\+H7219 led matrix chip to turn selected pixels on and off using a function. This class is designed to be used with the M\+H7219 Led Matrix 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classled__matrix_a4b06df3b2766cfde525f14e545d42178}\label{classled__matrix_a4b06df3b2766cfde525f14e545d42178}} 
+\index{led\+\_\+matrix@{led\+\_\+matrix}!led\+\_\+matrix@{led\+\_\+matrix}}
+\index{led\+\_\+matrix@{led\+\_\+matrix}!led\+\_\+matrix@{led\+\_\+matrix}}
+\subsubsection{\texorpdfstring{led\+\_\+matrix()}{led\_matrix()}}
+{\footnotesize\ttfamily led\+\_\+matrix\+::led\+\_\+matrix (\begin{DoxyParamCaption}\item[{hwlib\+::spi\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+sclk\+\_\+mosi\+\_\+miso \&}]{spi,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{cs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of M\+H7219 interface. 
+
+This is the constructor of the M\+H7219 interface. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classled__matrix_ac92b3805e1af58f4591bf22402c11d7e}\label{classled__matrix_ac92b3805e1af58f4591bf22402c11d7e}} 
+\index{led\+\_\+matrix@{led\+\_\+matrix}!clear@{clear}}
+\index{clear@{clear}!led\+\_\+matrix@{led\+\_\+matrix}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void led\+\_\+matrix\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Led Matrix Screen 
+
+function clears the current displayed pixels on the Led Matrix \mbox{\Hypertarget{classled__matrix_af26ac982e5c74a357f5fe18e73b819e4}\label{classled__matrix_af26ac982e5c74a357f5fe18e73b819e4}} 
+\index{led\+\_\+matrix@{led\+\_\+matrix}!clear\+\_\+buffer@{clear\+\_\+buffer}}
+\index{clear\+\_\+buffer@{clear\+\_\+buffer}!led\+\_\+matrix@{led\+\_\+matrix}}
+\subsubsection{\texorpdfstring{clear\+\_\+buffer()}{clear\_buffer()}}
+{\footnotesize\ttfamily void led\+\_\+matrix\+::clear\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+buffer 
+
+function clears the current screen buffer \mbox{\Hypertarget{classled__matrix_a074e1d86a05e2e67a3c329d589b601b8}\label{classled__matrix_a074e1d86a05e2e67a3c329d589b601b8}} 
+\index{led\+\_\+matrix@{led\+\_\+matrix}!flush@{flush}}
+\index{flush@{flush}!led\+\_\+matrix@{led\+\_\+matrix}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void led\+\_\+matrix\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+the buffer to the Led Matrix. 
+
+function writes the screen buffer array to the Led Matrix \mbox{\Hypertarget{classled__matrix_a0916fce5a976a46da16204265332015f}\label{classled__matrix_a0916fce5a976a46da16204265332015f}} 
+\index{led\+\_\+matrix@{led\+\_\+matrix}!flush\+\_\+buffer@{flush\+\_\+buffer}}
+\index{flush\+\_\+buffer@{flush\+\_\+buffer}!led\+\_\+matrix@{led\+\_\+matrix}}
+\subsubsection{\texorpdfstring{flush\+\_\+buffer()}{flush\_buffer()}}
+{\footnotesize\ttfamily void led\+\_\+matrix\+::flush\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{buffer\mbox{[}8\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+givin buffer to the Led Matrix 
+
+function is for writing a givin screen buffer to the Led Matrix \mbox{\Hypertarget{classled__matrix_a97602fdecff69971987941e12bc52a0f}\label{classled__matrix_a97602fdecff69971987941e12bc52a0f}} 
+\index{led\+\_\+matrix@{led\+\_\+matrix}!number@{number}}
+\index{number@{number}!led\+\_\+matrix@{led\+\_\+matrix}}
+\subsubsection{\texorpdfstring{number()}{number()}}
+{\footnotesize\ttfamily void led\+\_\+matrix\+::number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+a number on Led Matrix 
+
+Function displays a givin number on the Led Matrix \mbox{\Hypertarget{classled__matrix_ac926b398f60702bf06e1c6582c04ed6e}\label{classled__matrix_ac926b398f60702bf06e1c6582c04ed6e}} 
+\index{led\+\_\+matrix@{led\+\_\+matrix}!sleep@{sleep}}
+\index{sleep@{sleep}!led\+\_\+matrix@{led\+\_\+matrix}}
+\subsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily void led\+\_\+matrix\+::sleep (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tugs in the Led Matrix. 
+
+Sends a sleep bit to the Sleep Register for the M\+H7219 Led Matrix to turn it . \mbox{\Hypertarget{classled__matrix_aaaf3d4913c14f5c4f3fda0bab4d2c2d7}\label{classled__matrix_aaaf3d4913c14f5c4f3fda0bab4d2c2d7}} 
+\index{led\+\_\+matrix@{led\+\_\+matrix}!wake@{wake}}
+\index{wake@{wake}!led\+\_\+matrix@{led\+\_\+matrix}}
+\subsubsection{\texorpdfstring{wake()}{wake()}}
+{\footnotesize\ttfamily void led\+\_\+matrix\+::wake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wakes up the Led Matrix. 
+
+\textbackslash{} Wakes up the M\+H7219 Led Matrix Chip by sending data to different registers. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Matrix\+Engine/\hyperlink{led__matrix_8hpp}{led\+\_\+matrix.\+hpp}\end{DoxyCompactItemize}

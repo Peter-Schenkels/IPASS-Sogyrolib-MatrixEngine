@@ -1,0 +1,148 @@
+\hypertarget{classwindow}{}\section{window Class Reference}
+\label{classwindow}\index{window@{window}}
+
+
+Renders all data within the sizes and positions.  
+
+
+
+
+{\ttfamily \#include $<$window.\+h$>$}
+
+
+
+Inheritance diagram for window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{classwindow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classwindow__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwindow_a6ea85176a95779f23e6fa96c33dc7dfd}\label{classwindow_a6ea85176a95779f23e6fa96c33dc7dfd}} 
+{\bfseries window} (int x, int y, int x\+\_\+size, int y\+\_\+size, \hyperlink{classfield}{field} \&f)
+\item 
+void \hyperlink{classwindow_aaa5781da14047b439cd587935633ee6d}{draw} ()
+\begin{DoxyCompactList}\small\item\em Renders data to terminal. \end{DoxyCompactList}\item 
+void \hyperlink{classwindow_a405e7d2c0fcc62a7626c26e82b7a1ae4}{draw} (\hyperlink{classled__matrix}{led\+\_\+matrix} \&display)
+\begin{DoxyCompactList}\small\item\em Renders data to 8x8 matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classwindow_a398eefc89f338540648fa779de957921}{draw} (hwlib\+::window \&display)
+\begin{DoxyCompactList}\small\item\em Renders data to hwlib window. \end{DoxyCompactList}\item 
+void \hyperlink{classwindow_aa32da017b225e569e0e3ca6974505873}{move} (\hyperlink{classxy}{xy} start)
+\begin{DoxyCompactList}\small\item\em Changes xy pos of frame. \end{DoxyCompactList}\item 
+void \hyperlink{classwindow_a6c22ca4ea83cd685762d6c7efb0f228a}{move} (\hyperlink{classxy}{xy} start, \hyperlink{classxy}{xy} end)
+\begin{DoxyCompactList}\small\item\em Changes from begin xy to an end xy pos. \end{DoxyCompactList}\item 
+void \hyperlink{classwindow_ae668127fa0e1ad8946dcac6a620042b7}{follow} (\hyperlink{classobject}{object} \&obj)
+\begin{DoxyCompactList}\small\item\em Frame follows object. \end{DoxyCompactList}\item 
+void \hyperlink{classwindow_a83a6b8a998e102def39d0c827d99b48e}{follow\+\_\+y} (\hyperlink{classobject}{object} \&obj)
+\begin{DoxyCompactList}\small\item\em Frame follows object. \end{DoxyCompactList}\item 
+void \hyperlink{classwindow_a64c6dd5f1f544282541532e17a26d1e7}{follow\+\_\+y} (\hyperlink{classobject}{object} \&obj, int offset)
+\begin{DoxyCompactList}\small\item\em Frame follows object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Renders all data within the sizes and positions. 
+
+Window class is similair to a camera in the way that it only renders what it sees. The window class has it\textquotesingle{}s own position inside the field and can follow objects. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classwindow_aaa5781da14047b439cd587935633ee6d}\label{classwindow_aaa5781da14047b439cd587935633ee6d}} 
+\index{window@{window}!draw@{draw}}
+\index{draw@{draw}!window@{window}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void window\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders data to terminal. 
+
+turns vector data from field into terminal outputs \mbox{\Hypertarget{classwindow_a405e7d2c0fcc62a7626c26e82b7a1ae4}\label{classwindow_a405e7d2c0fcc62a7626c26e82b7a1ae4}} 
+\index{window@{window}!draw@{draw}}
+\index{draw@{draw}!window@{window}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void window\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{classled__matrix}{led\+\_\+matrix} \&}]{display }\end{DoxyParamCaption})}
+
+
+
+Renders data to 8x8 matrix. 
+
+turns array data from field into 8x8 matrix \mbox{\Hypertarget{classwindow_a398eefc89f338540648fa779de957921}\label{classwindow_a398eefc89f338540648fa779de957921}} 
+\index{window@{window}!draw@{draw}}
+\index{draw@{draw}!window@{window}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void window\+::draw (\begin{DoxyParamCaption}\item[{hwlib\+::window \&}]{display }\end{DoxyParamCaption})}
+
+
+
+Renders data to hwlib window. 
+
+turns array data from field into a hwlib window \mbox{\Hypertarget{classwindow_ae668127fa0e1ad8946dcac6a620042b7}\label{classwindow_ae668127fa0e1ad8946dcac6a620042b7}} 
+\index{window@{window}!follow@{follow}}
+\index{follow@{follow}!window@{window}}
+\subsubsection{\texorpdfstring{follow()}{follow()}}
+{\footnotesize\ttfamily void window\+::follow (\begin{DoxyParamCaption}\item[{\hyperlink{classobject}{object} \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Frame follows object. 
+
+Frame follows given object for one frame \mbox{\Hypertarget{classwindow_a83a6b8a998e102def39d0c827d99b48e}\label{classwindow_a83a6b8a998e102def39d0c827d99b48e}} 
+\index{window@{window}!follow\+\_\+y@{follow\+\_\+y}}
+\index{follow\+\_\+y@{follow\+\_\+y}!window@{window}}
+\subsubsection{\texorpdfstring{follow\+\_\+y()}{follow\_y()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void window\+::follow\+\_\+y (\begin{DoxyParamCaption}\item[{\hyperlink{classobject}{object} \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Frame follows object. 
+
+Frame follows the y axis for a given object for one frame \mbox{\Hypertarget{classwindow_a64c6dd5f1f544282541532e17a26d1e7}\label{classwindow_a64c6dd5f1f544282541532e17a26d1e7}} 
+\index{window@{window}!follow\+\_\+y@{follow\+\_\+y}}
+\index{follow\+\_\+y@{follow\+\_\+y}!window@{window}}
+\subsubsection{\texorpdfstring{follow\+\_\+y()}{follow\_y()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void window\+::follow\+\_\+y (\begin{DoxyParamCaption}\item[{\hyperlink{classobject}{object} \&}]{obj,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+
+
+Frame follows object. 
+
+Frame follows the y axis for a given object for one frame with an offset \mbox{\Hypertarget{classwindow_aa32da017b225e569e0e3ca6974505873}\label{classwindow_aa32da017b225e569e0e3ca6974505873}} 
+\index{window@{window}!move@{move}}
+\index{move@{move}!window@{window}}
+\subsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void window\+::move (\begin{DoxyParamCaption}\item[{\hyperlink{classxy}{xy}}]{start }\end{DoxyParamCaption})}
+
+
+
+Changes xy pos of frame. 
+
+Moves frame directly to a certain x and y position inside the scene \mbox{\Hypertarget{classwindow_a6c22ca4ea83cd685762d6c7efb0f228a}\label{classwindow_a6c22ca4ea83cd685762d6c7efb0f228a}} 
+\index{window@{window}!move@{move}}
+\index{move@{move}!window@{window}}
+\subsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void window\+::move (\begin{DoxyParamCaption}\item[{\hyperlink{classxy}{xy}}]{start,  }\item[{\hyperlink{classxy}{xy}}]{end }\end{DoxyParamCaption})}
+
+
+
+Changes from begin xy to an end xy pos. 
+
+Animates a frame to a certain x and y position every tick 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Matrix\+Engine/\hyperlink{window_8h}{window.\+h}\item 
+src/\+Matrix\+Engine/window.\+cpp\end{DoxyCompactItemize}

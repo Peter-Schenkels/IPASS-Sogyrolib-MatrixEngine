@@ -1,0 +1,110 @@
+\hypertarget{classcontroller}{}\section{controller Class Reference}
+\label{classcontroller}\index{controller@{controller}}
+
+
+Gyroscope decorator.  
+
+
+
+
+{\ttfamily \#include $<$controller.\+hpp$>$}
+
+
+
+Inheritance diagram for controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classcontroller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classcontroller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcontroller_afdfd96f893a363a81df69f9011772948}{controller} (\hyperlink{classsogyro}{sogyro} \&gyro)
+\begin{DoxyCompactList}\small\item\em Constructor for gyroscope decorator. \end{DoxyCompactList}\item 
+int \hyperlink{classcontroller_a08706a1d0b65e1e75cd136205861c3bb}{dir} (int gyro, int scale)
+\begin{DoxyCompactList}\small\item\em Returns direction as an int. \end{DoxyCompactList}\item 
+int \hyperlink{classcontroller_a0f32b7bba7ac0026bbdcde8de15eeb73}{get\+\_\+dir\+\_\+x} (int scale)
+\begin{DoxyCompactList}\small\item\em Returns direction x as an int. \end{DoxyCompactList}\item 
+int \hyperlink{classcontroller_a6947eb778084e6c5b74b993f0fda3eaf}{get\+\_\+dir\+\_\+y} (int scale)
+\begin{DoxyCompactList}\small\item\em Returns direction y as an int. \end{DoxyCompactList}\item 
+int \hyperlink{classcontroller_a26c377443455cda82579776db7e2b404}{get\+\_\+dir\+\_\+z} (int scale)
+\begin{DoxyCompactList}\small\item\em Returns direction z as an int. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Gyroscope decorator. 
+
+This class a decorator for the gryoscope and can be used in games. It can return values based on the tilt of the gyroscope. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcontroller_afdfd96f893a363a81df69f9011772948}\label{classcontroller_afdfd96f893a363a81df69f9011772948}} 
+\index{controller@{controller}!controller@{controller}}
+\index{controller@{controller}!controller@{controller}}
+\subsubsection{\texorpdfstring{controller()}{controller()}}
+{\footnotesize\ttfamily controller\+::controller (\begin{DoxyParamCaption}\item[{\hyperlink{classsogyro}{sogyro} \&}]{gyro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for gyroscope decorator. 
+
+thsi contructor interfaces the controller decorator for the gyroscope. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcontroller_a08706a1d0b65e1e75cd136205861c3bb}\label{classcontroller_a08706a1d0b65e1e75cd136205861c3bb}} 
+\index{controller@{controller}!dir@{dir}}
+\index{dir@{dir}!controller@{controller}}
+\subsubsection{\texorpdfstring{dir()}{dir()}}
+{\footnotesize\ttfamily int controller\+::dir (\begin{DoxyParamCaption}\item[{int}]{gyro,  }\item[{int}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns direction as an int. 
+
+Returns direction as an int 0 is middle 1 is right -\/1 left \mbox{\Hypertarget{classcontroller_a0f32b7bba7ac0026bbdcde8de15eeb73}\label{classcontroller_a0f32b7bba7ac0026bbdcde8de15eeb73}} 
+\index{controller@{controller}!get\+\_\+dir\+\_\+x@{get\+\_\+dir\+\_\+x}}
+\index{get\+\_\+dir\+\_\+x@{get\+\_\+dir\+\_\+x}!controller@{controller}}
+\subsubsection{\texorpdfstring{get\+\_\+dir\+\_\+x()}{get\_dir\_x()}}
+{\footnotesize\ttfamily int controller\+::get\+\_\+dir\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns direction x as an int. 
+
+Returns direction x as an int 0 is middle 1 is right -\/1 left \mbox{\Hypertarget{classcontroller_a6947eb778084e6c5b74b993f0fda3eaf}\label{classcontroller_a6947eb778084e6c5b74b993f0fda3eaf}} 
+\index{controller@{controller}!get\+\_\+dir\+\_\+y@{get\+\_\+dir\+\_\+y}}
+\index{get\+\_\+dir\+\_\+y@{get\+\_\+dir\+\_\+y}!controller@{controller}}
+\subsubsection{\texorpdfstring{get\+\_\+dir\+\_\+y()}{get\_dir\_y()}}
+{\footnotesize\ttfamily int controller\+::get\+\_\+dir\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns direction y as an int. 
+
+Returns direction y as an int 0 is middle 1 is right -\/1 left \mbox{\Hypertarget{classcontroller_a26c377443455cda82579776db7e2b404}\label{classcontroller_a26c377443455cda82579776db7e2b404}} 
+\index{controller@{controller}!get\+\_\+dir\+\_\+z@{get\+\_\+dir\+\_\+z}}
+\index{get\+\_\+dir\+\_\+z@{get\+\_\+dir\+\_\+z}!controller@{controller}}
+\subsubsection{\texorpdfstring{get\+\_\+dir\+\_\+z()}{get\_dir\_z()}}
+{\footnotesize\ttfamily int controller\+::get\+\_\+dir\+\_\+z (\begin{DoxyParamCaption}\item[{int}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns direction z as an int. 
+
+Returns direction z as an int 0 is middle 1 is right -\/1 left 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Sogyrolib/\+Master/\hyperlink{controller_8hpp}{controller.\+hpp}\end{DoxyCompactItemize}

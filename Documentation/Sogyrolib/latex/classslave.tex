@@ -1,0 +1,90 @@
+\hypertarget{classslave}{}\section{slave Class Reference}
+\label{classslave}\index{slave@{slave}}
+
+
+Class to create a S\+PI slave for Arduino.  
+
+
+
+
+{\ttfamily \#include $<$slave.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classslave_af73020d7757901f0c58619b2abb6bb44}\label{classslave_af73020d7757901f0c58619b2abb6bb44}} 
+{\bfseries slave} (\hyperlink{classl3g4200}{l3g4200} \&gyro)
+\item 
+void \hyperlink{classslave_ad7387f369836c10790362781d5ce92da}{byte\+\_\+send} ()
+\begin{DoxyCompactList}\small\item\em Sends byte to master. \end{DoxyCompactList}\item 
+void \hyperlink{classslave_af42612432810eefab015f40c32958fe9}{byte\+\_\+read} ()
+\begin{DoxyCompactList}\small\item\em Reads byte from master. \end{DoxyCompactList}\item 
+void \hyperlink{classslave_a47169cdf6f0aaa0c303c5d860c89bef2}{print} ()
+\begin{DoxyCompactList}\small\item\em Prints incomming byte. \end{DoxyCompactList}\item 
+void \hyperlink{classslave_ab93bbc9a1b5e8b5fafb01b63e05440b0}{check} ()
+\begin{DoxyCompactList}\small\item\em Checks incomming byte to execute gyroscope function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classslave_af3671b4d8f443e427a0610ad2a2f2977}\label{classslave_af3671b4d8f443e427a0610ad2a2f2977}} 
+uint\+\_\+fast8\+\_\+t {\bfseries data\+\_\+in} = 0x0
+\item 
+\mbox{\Hypertarget{classslave_a737d2cc1027a4344b862a15bafbf7e81}\label{classslave_a737d2cc1027a4344b862a15bafbf7e81}} 
+uint\+\_\+fast8\+\_\+t {\bfseries data\+\_\+out} = 0x68
+\item 
+\mbox{\Hypertarget{classslave_a1df63e87edf58a2c29c3c42b1562d1d0}\label{classslave_a1df63e87edf58a2c29c3c42b1562d1d0}} 
+int {\bfseries position} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to create a S\+PI slave for Arduino. 
+
+This class is used to make a S\+PI bus slave to connect multiple Arduino\textquotesingle{}s with each other. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classslave_af42612432810eefab015f40c32958fe9}\label{classslave_af42612432810eefab015f40c32958fe9}} 
+\index{slave@{slave}!byte\+\_\+read@{byte\+\_\+read}}
+\index{byte\+\_\+read@{byte\+\_\+read}!slave@{slave}}
+\subsubsection{\texorpdfstring{byte\+\_\+read()}{byte\_read()}}
+{\footnotesize\ttfamily void slave\+::byte\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads byte from master. 
+
+This function reads the incomming byte from the master Arduino. \mbox{\Hypertarget{classslave_ad7387f369836c10790362781d5ce92da}\label{classslave_ad7387f369836c10790362781d5ce92da}} 
+\index{slave@{slave}!byte\+\_\+send@{byte\+\_\+send}}
+\index{byte\+\_\+send@{byte\+\_\+send}!slave@{slave}}
+\subsubsection{\texorpdfstring{byte\+\_\+send()}{byte\_send()}}
+{\footnotesize\ttfamily void slave\+::byte\+\_\+send (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sends byte to master. 
+
+This function writes a byte to the master Arduino \mbox{\Hypertarget{classslave_ab93bbc9a1b5e8b5fafb01b63e05440b0}\label{classslave_ab93bbc9a1b5e8b5fafb01b63e05440b0}} 
+\index{slave@{slave}!check@{check}}
+\index{check@{check}!slave@{slave}}
+\subsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily void slave\+::check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks incomming byte to execute gyroscope function. 
+
+This function checks the incomming byte and determines wich function of the gyroscope library it schould execute. \mbox{\Hypertarget{classslave_a47169cdf6f0aaa0c303c5d860c89bef2}\label{classslave_a47169cdf6f0aaa0c303c5d860c89bef2}} 
+\index{slave@{slave}!print@{print}}
+\index{print@{print}!slave@{slave}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void slave\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Prints incomming byte. 
+
+This function prints the incomming byte buffer 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Sogyrolib/\+Slave/\hyperlink{slave_8hpp}{slave.\+hpp}\end{DoxyCompactItemize}

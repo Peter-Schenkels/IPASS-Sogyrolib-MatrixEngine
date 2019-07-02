@@ -151,19 +151,19 @@ public:
   /// \brief
   /// returns icon
   /// \details
-  /// returns entity's char variabel named icon.
+  /// This function returns entity's icon.
    char get_icon(){return icon;}
 
   /// \brief
   /// returns x speed
   /// \details
-  /// returns entity's float variabel named speed_x.
+  /// This function returns the x speed of object.
    float get_speed_x(){return speed_x;}
 
   /// \brief
   /// sets x speed
   /// \details
-  /// replaces entity's x speed to givin float.
+  /// This function sets entity's x speed to given speed.
    void set_speed_x(float new_speed){speed_x = new_speed;}
 
   /// \brief
@@ -175,19 +175,19 @@ public:
   /// \brief
   /// sets y speed
   /// \details
-  /// replaces entity's y speed to givin float.
+  /// This function sets entity's y speed to given speed.
    void set_speed_y(float new_speed){speed_y = new_speed;}
 
   /// \brief
   /// returns gravity
   /// \details
-  /// returns if entity has gravity.
+  /// This function returns if this entity can be affected by gravity.
    bool get_gravity(){return gravity;}
 
   /// \brief
   /// returns bounce
   /// \details
-  /// returns if entity is able to bounce.
+  /// This function returns if the object can bounce
    bool get_bounce(){return bounce;}
 
 
@@ -198,7 +198,7 @@ public:
 /// \brief
 /// Solid Object with a start end point
 /// \details
-/// This class of an solid object with a start and end position. this object is able to draw lines.
+/// This class of an solid object with a start and end position. Normal entities cannot move through an obstacle.
 class obstacle : public object{
     
 private:
@@ -298,6 +298,9 @@ public:
 	
 };
 
+
+/// \brief 
+/// Inherited class solely made for the frog jump demo
 class player : public entity {
 
 

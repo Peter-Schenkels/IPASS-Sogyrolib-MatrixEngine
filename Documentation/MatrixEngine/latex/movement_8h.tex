@@ -1,0 +1,45 @@
+\hypertarget{movement_8h}{}\section{src/\+Matrix\+Engine/movement.h File Reference}
+\label{movement_8h}\index{src/\+Matrix\+Engine/movement.\+h@{src/\+Matrix\+Engine/movement.\+h}}
+{\ttfamily \#include \char`\"{}object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}field.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}window.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}window\+\_\+conf.\+h\char`\"{}}\newline
+Include dependency graph for movement.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{movement_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{movement_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{movement_8h_a09c373da69e4b1875fb45d4fa03a62a3}{make\+\_\+move} (const char \&move, \hyperlink{classentity}{entity} \&speler, \hyperlink{classfield}{field} \&veld)
+\item 
+void \hyperlink{movement_8h_affe859be9e4907f125894c7cd59220aa}{make\+\_\+move} (const char \&move, \hyperlink{classwindow}{window} \&camera, \hyperlink{classfield}{field} \&veld)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{movement_8h_a09c373da69e4b1875fb45d4fa03a62a3}\label{movement_8h_a09c373da69e4b1875fb45d4fa03a62a3}} 
+\index{movement.\+h@{movement.\+h}!make\+\_\+move@{make\+\_\+move}}
+\index{make\+\_\+move@{make\+\_\+move}!movement.\+h@{movement.\+h}}
+\subsubsection{\texorpdfstring{make\+\_\+move()}{make\_move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void make\+\_\+move (\begin{DoxyParamCaption}\item[{const char \&}]{move,  }\item[{\hyperlink{classentity}{entity} \&}]{speler,  }\item[{\hyperlink{classfield}{field} \&}]{veld }\end{DoxyParamCaption})}
+
+\textbackslash{} brief generates next position of entity \textbackslash{} details Generate next position of an entity on input value d (down) u (up) l (left) r (right) Object only moves when his next position is equal to air. \mbox{\Hypertarget{movement_8h_affe859be9e4907f125894c7cd59220aa}\label{movement_8h_affe859be9e4907f125894c7cd59220aa}} 
+\index{movement.\+h@{movement.\+h}!make\+\_\+move@{make\+\_\+move}}
+\index{make\+\_\+move@{make\+\_\+move}!movement.\+h@{movement.\+h}}
+\subsubsection{\texorpdfstring{make\+\_\+move()}{make\_move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void make\+\_\+move (\begin{DoxyParamCaption}\item[{const char \&}]{move,  }\item[{\hyperlink{classwindow}{window} \&}]{camera,  }\item[{\hyperlink{classfield}{field} \&}]{veld }\end{DoxyParamCaption})}
+
+\textbackslash{} brief generates next position of camera \textbackslash{} details Generate next position of an entity on input value d (down) u (up) l (left) r (right) Object only moves when his next position is equal to air. 

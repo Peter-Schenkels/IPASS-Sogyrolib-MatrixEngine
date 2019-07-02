@@ -1,0 +1,203 @@
+\hypertarget{classentity}{}\section{entity Class Reference}
+\label{classentity}\index{entity@{entity}}
+
+
+A visable entity.  
+
+
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+
+
+Inheritance diagram for entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=123pt]{classentity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{classentity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classentity_aee3c44b079e4b0909636151b8394fd5b}{entity} (const int \&start\+\_\+x, const int \&start\+\_\+y, char p\+\_\+icon, const float \&speed\+\_\+x, const float \&speed\+\_\+y, const bool \&gravity, const bool \&bounce, const bool \&solid)
+\begin{DoxyCompactList}\small\item\em Constructs a entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classentity_ae4d78c5416cd69fbb391cda12a350bfa}\label{classentity_ae4d78c5416cd69fbb391cda12a350bfa}} 
+bool {\bfseries get\+\_\+stand} ()
+\item 
+\mbox{\Hypertarget{classentity_a60593dd7d74e30a73422acd3fc4c7d30}\label{classentity_a60593dd7d74e30a73422acd3fc4c7d30}} 
+void {\bfseries set\+\_\+stand} (bool new\+\_\+stand)
+\item 
+bool \hyperlink{classentity_a3831f4f3b9a07d9fa412909ba2e8d2e7}{get\+\_\+solid} ()
+\begin{DoxyCompactList}\small\item\em returns solid \end{DoxyCompactList}\item 
+char \hyperlink{classentity_a7be4922bae8e57cb46947b752d6ee5b7}{get\+\_\+icon} ()
+\begin{DoxyCompactList}\small\item\em returns icon \end{DoxyCompactList}\item 
+float \hyperlink{classentity_a13d173e3d5dd4b669fc88180644b6ae4}{get\+\_\+speed\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em returns x speed \end{DoxyCompactList}\item 
+void \hyperlink{classentity_ab07ddec04048c0711a3684d49ae8fa91}{set\+\_\+speed\+\_\+x} (float new\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em sets x speed \end{DoxyCompactList}\item 
+float \hyperlink{classentity_aac6ef6881c0a334a6cca1c321ffd6066}{get\+\_\+speed\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em returns yspeed \end{DoxyCompactList}\item 
+void \hyperlink{classentity_a64a214c123d3ede336ea6989c05063e7}{set\+\_\+speed\+\_\+y} (float new\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em sets y speed \end{DoxyCompactList}\item 
+bool \hyperlink{classentity_a2e69aae60dda8b7a1b381f7e99f6913f}{get\+\_\+gravity} ()
+\begin{DoxyCompactList}\small\item\em returns gravity \end{DoxyCompactList}\item 
+bool \hyperlink{classentity_a0c3bddcd6f6512eb0826dfebc90e5b05}{get\+\_\+bounce} ()
+\begin{DoxyCompactList}\small\item\em returns bounce \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classentity_ae208c1d4002534e9c82d9c27c4b6d121}\label{classentity_ae208c1d4002534e9c82d9c27c4b6d121}} 
+unsigned int {\bfseries score} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classentity_a276f34d880f0f31f9cd057e6568af672}\label{classentity_a276f34d880f0f31f9cd057e6568af672}} 
+char {\bfseries icon}
+\item 
+\mbox{\Hypertarget{classentity_ade26db2645e09e5cc93dea7688d158bb}\label{classentity_ade26db2645e09e5cc93dea7688d158bb}} 
+float {\bfseries speed\+\_\+x}
+\item 
+\mbox{\Hypertarget{classentity_acfd9a2ea16306a4728fdc712b55732c0}\label{classentity_acfd9a2ea16306a4728fdc712b55732c0}} 
+float {\bfseries speed\+\_\+y}
+\item 
+\mbox{\Hypertarget{classentity_a66debba3d886c74a8f7b39a4f173d02e}\label{classentity_a66debba3d886c74a8f7b39a4f173d02e}} 
+bool {\bfseries gravity}
+\item 
+\mbox{\Hypertarget{classentity_aa2f2b1ebf9dccdf263ae7559b8ddf0bc}\label{classentity_aa2f2b1ebf9dccdf263ae7559b8ddf0bc}} 
+bool {\bfseries bounce}
+\item 
+\mbox{\Hypertarget{classentity_a1284d3366a58d5a6655bb7899e323533}\label{classentity_a1284d3366a58d5a6655bb7899e323533}} 
+bool {\bfseries stand} = 0
+\item 
+\mbox{\Hypertarget{classentity_a743f264f8bcb5ac53e4e28ab88ace871}\label{classentity_a743f264f8bcb5ac53e4e28ab88ace871}} 
+int {\bfseries health} = 100
+\item 
+\mbox{\Hypertarget{classentity_a1aeb8437d4a5a56ef92dad3589ce0f88}\label{classentity_a1aeb8437d4a5a56ef92dad3589ce0f88}} 
+float {\bfseries strength} = 1
+\item 
+\mbox{\Hypertarget{classentity_a7d0545e294792e49ad9e48f56f1863c2}\label{classentity_a7d0545e294792e49ad9e48f56f1863c2}} 
+float {\bfseries weight} = 1
+\item 
+\mbox{\Hypertarget{classentity_a0d9dca7195de473ad176923db9a7e073}\label{classentity_a0d9dca7195de473ad176923db9a7e073}} 
+bool {\bfseries solid}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A visable entity. 
+
+An entity that has an icon, a speed and optionally gravity and other physics. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classentity_aee3c44b079e4b0909636151b8394fd5b}\label{classentity_aee3c44b079e4b0909636151b8394fd5b}} 
+\index{entity@{entity}!entity@{entity}}
+\index{entity@{entity}!entity@{entity}}
+\subsubsection{\texorpdfstring{entity()}{entity()}}
+{\footnotesize\ttfamily entity\+::entity (\begin{DoxyParamCaption}\item[{const int \&}]{start\+\_\+x,  }\item[{const int \&}]{start\+\_\+y,  }\item[{char}]{p\+\_\+icon,  }\item[{const float \&}]{speed\+\_\+x,  }\item[{const float \&}]{speed\+\_\+y,  }\item[{const bool \&}]{gravity,  }\item[{const bool \&}]{bounce,  }\item[{const bool \&}]{solid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a entity. 
+
+This constructor construct an entity 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classentity_a0c3bddcd6f6512eb0826dfebc90e5b05}\label{classentity_a0c3bddcd6f6512eb0826dfebc90e5b05}} 
+\index{entity@{entity}!get\+\_\+bounce@{get\+\_\+bounce}}
+\index{get\+\_\+bounce@{get\+\_\+bounce}!entity@{entity}}
+\subsubsection{\texorpdfstring{get\+\_\+bounce()}{get\_bounce()}}
+{\footnotesize\ttfamily bool entity\+::get\+\_\+bounce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns bounce 
+
+This function returns if the object can bounce \mbox{\Hypertarget{classentity_a2e69aae60dda8b7a1b381f7e99f6913f}\label{classentity_a2e69aae60dda8b7a1b381f7e99f6913f}} 
+\index{entity@{entity}!get\+\_\+gravity@{get\+\_\+gravity}}
+\index{get\+\_\+gravity@{get\+\_\+gravity}!entity@{entity}}
+\subsubsection{\texorpdfstring{get\+\_\+gravity()}{get\_gravity()}}
+{\footnotesize\ttfamily bool entity\+::get\+\_\+gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns gravity 
+
+This function returns if this entity can be affected by gravity. \mbox{\Hypertarget{classentity_a7be4922bae8e57cb46947b752d6ee5b7}\label{classentity_a7be4922bae8e57cb46947b752d6ee5b7}} 
+\index{entity@{entity}!get\+\_\+icon@{get\+\_\+icon}}
+\index{get\+\_\+icon@{get\+\_\+icon}!entity@{entity}}
+\subsubsection{\texorpdfstring{get\+\_\+icon()}{get\_icon()}}
+{\footnotesize\ttfamily char entity\+::get\+\_\+icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns icon 
+
+This function returns entity\textquotesingle{}s icon. \mbox{\Hypertarget{classentity_a3831f4f3b9a07d9fa412909ba2e8d2e7}\label{classentity_a3831f4f3b9a07d9fa412909ba2e8d2e7}} 
+\index{entity@{entity}!get\+\_\+solid@{get\+\_\+solid}}
+\index{get\+\_\+solid@{get\+\_\+solid}!entity@{entity}}
+\subsubsection{\texorpdfstring{get\+\_\+solid()}{get\_solid()}}
+{\footnotesize\ttfamily bool entity\+::get\+\_\+solid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns solid 
+
+returns if the object is solid \mbox{\Hypertarget{classentity_a13d173e3d5dd4b669fc88180644b6ae4}\label{classentity_a13d173e3d5dd4b669fc88180644b6ae4}} 
+\index{entity@{entity}!get\+\_\+speed\+\_\+x@{get\+\_\+speed\+\_\+x}}
+\index{get\+\_\+speed\+\_\+x@{get\+\_\+speed\+\_\+x}!entity@{entity}}
+\subsubsection{\texorpdfstring{get\+\_\+speed\+\_\+x()}{get\_speed\_x()}}
+{\footnotesize\ttfamily float entity\+::get\+\_\+speed\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns x speed 
+
+This function returns the x speed of object. \mbox{\Hypertarget{classentity_aac6ef6881c0a334a6cca1c321ffd6066}\label{classentity_aac6ef6881c0a334a6cca1c321ffd6066}} 
+\index{entity@{entity}!get\+\_\+speed\+\_\+y@{get\+\_\+speed\+\_\+y}}
+\index{get\+\_\+speed\+\_\+y@{get\+\_\+speed\+\_\+y}!entity@{entity}}
+\subsubsection{\texorpdfstring{get\+\_\+speed\+\_\+y()}{get\_speed\_y()}}
+{\footnotesize\ttfamily float entity\+::get\+\_\+speed\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns yspeed 
+
+returns entity\textquotesingle{}s float variabel named speed\+\_\+y. \mbox{\Hypertarget{classentity_ab07ddec04048c0711a3684d49ae8fa91}\label{classentity_ab07ddec04048c0711a3684d49ae8fa91}} 
+\index{entity@{entity}!set\+\_\+speed\+\_\+x@{set\+\_\+speed\+\_\+x}}
+\index{set\+\_\+speed\+\_\+x@{set\+\_\+speed\+\_\+x}!entity@{entity}}
+\subsubsection{\texorpdfstring{set\+\_\+speed\+\_\+x()}{set\_speed\_x()}}
+{\footnotesize\ttfamily void entity\+::set\+\_\+speed\+\_\+x (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets x speed 
+
+This function sets entity\textquotesingle{}s x speed to given speed. \mbox{\Hypertarget{classentity_a64a214c123d3ede336ea6989c05063e7}\label{classentity_a64a214c123d3ede336ea6989c05063e7}} 
+\index{entity@{entity}!set\+\_\+speed\+\_\+y@{set\+\_\+speed\+\_\+y}}
+\index{set\+\_\+speed\+\_\+y@{set\+\_\+speed\+\_\+y}!entity@{entity}}
+\subsubsection{\texorpdfstring{set\+\_\+speed\+\_\+y()}{set\_speed\_y()}}
+{\footnotesize\ttfamily void entity\+::set\+\_\+speed\+\_\+y (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets y speed 
+
+This function sets entity\textquotesingle{}s y speed to given speed. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Matrix\+Engine/\hyperlink{object_8h}{object.\+h}\end{DoxyCompactItemize}

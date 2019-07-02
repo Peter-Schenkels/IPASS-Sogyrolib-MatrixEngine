@@ -1,0 +1,177 @@
+\hypertarget{classobject}{}\section{object Class Reference}
+\label{classobject}\index{object@{object}}
+
+
+A void object with a position.  
+
+
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+
+
+Inheritance diagram for object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classobject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{classobject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classobject_a3266e9f8d8e98fe05314c959f5929c7d}\label{classobject_a3266e9f8d8e98fe05314c959f5929c7d}} 
+{\bfseries object} (const int \&start\+\_\+x, const int \&start\+\_\+y)
+\item 
+virtual int \hyperlink{classobject_a495a093671c8741380a292dd0bc757cb}{get\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em returns x \end{DoxyCompactList}\item 
+virtual int \hyperlink{classobject_abc363fe3aa7a4f29b035df6a57695eba}{get\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em returns y \end{DoxyCompactList}\item 
+virtual void \hyperlink{classobject_a0520ed913c351f67b3abc458a5896833}{set\+\_\+x} (int u\+\_\+x)
+\begin{DoxyCompactList}\small\item\em sets x \end{DoxyCompactList}\item 
+virtual void \hyperlink{classobject_af2831ab422aedd6671aa894d78bb5288}{set\+\_\+y} (int u\+\_\+y)
+\begin{DoxyCompactList}\small\item\em sets y \end{DoxyCompactList}\item 
+void \hyperlink{classobject_a303b713cf517cebb6b56476facc9022f}{set\+\_\+pos} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Set position to given coordinates. \end{DoxyCompactList}\item 
+void \hyperlink{classobject_afeb4c581ea86494f8063f286664adbe6}{move\+\_\+up} ()
+\begin{DoxyCompactList}\small\item\em Subtracts one from x. \end{DoxyCompactList}\item 
+void \hyperlink{classobject_a0a8f714e2850552b925383f53c407430}{move\+\_\+down} ()
+\begin{DoxyCompactList}\small\item\em Adds Sone from x. \end{DoxyCompactList}\item 
+void \hyperlink{classobject_a60b38349b8faad4c9e41f08df2c41428}{move\+\_\+left} ()
+\begin{DoxyCompactList}\small\item\em Subtracts one from y. \end{DoxyCompactList}\item 
+void \hyperlink{classobject_aeee28bb1b3f967e374c2878ddc4c57df}{move\+\_\+right} ()
+\begin{DoxyCompactList}\small\item\em Adds one from y. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxy}{xy} \hyperlink{classobject_a7fc771aa9781b84b7ee9d222c9bfa605}{pos\+XY}
+\begin{DoxyCompactList}\small\item\em position of object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A void object with a position. 
+
+A void object with a position, an object on its own is invisable inside a frame because it\textquotesingle{}s a void. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classobject_a495a093671c8741380a292dd0bc757cb}\label{classobject_a495a093671c8741380a292dd0bc757cb}} 
+\index{object@{object}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!object@{object}}
+\subsubsection{\texorpdfstring{get\+\_\+x()}{get\_x()}}
+{\footnotesize\ttfamily virtual int object\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+returns x 
+
+returns x position of the object \mbox{\Hypertarget{classobject_abc363fe3aa7a4f29b035df6a57695eba}\label{classobject_abc363fe3aa7a4f29b035df6a57695eba}} 
+\index{object@{object}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!object@{object}}
+\subsubsection{\texorpdfstring{get\+\_\+y()}{get\_y()}}
+{\footnotesize\ttfamily virtual int object\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+returns y 
+
+returns y position of the object \mbox{\Hypertarget{classobject_a0a8f714e2850552b925383f53c407430}\label{classobject_a0a8f714e2850552b925383f53c407430}} 
+\index{object@{object}!move\+\_\+down@{move\+\_\+down}}
+\index{move\+\_\+down@{move\+\_\+down}!object@{object}}
+\subsubsection{\texorpdfstring{move\+\_\+down()}{move\_down()}}
+{\footnotesize\ttfamily void object\+::move\+\_\+down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds Sone from x. 
+
+Moves the object down by one unit adding one to the x position \mbox{\Hypertarget{classobject_a60b38349b8faad4c9e41f08df2c41428}\label{classobject_a60b38349b8faad4c9e41f08df2c41428}} 
+\index{object@{object}!move\+\_\+left@{move\+\_\+left}}
+\index{move\+\_\+left@{move\+\_\+left}!object@{object}}
+\subsubsection{\texorpdfstring{move\+\_\+left()}{move\_left()}}
+{\footnotesize\ttfamily void object\+::move\+\_\+left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subtracts one from y. 
+
+Moves the object left by one unit subtracting one to the y position \mbox{\Hypertarget{classobject_aeee28bb1b3f967e374c2878ddc4c57df}\label{classobject_aeee28bb1b3f967e374c2878ddc4c57df}} 
+\index{object@{object}!move\+\_\+right@{move\+\_\+right}}
+\index{move\+\_\+right@{move\+\_\+right}!object@{object}}
+\subsubsection{\texorpdfstring{move\+\_\+right()}{move\_right()}}
+{\footnotesize\ttfamily void object\+::move\+\_\+right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds one from y. 
+
+Moves the object right by one unit by adding one to the y position \mbox{\Hypertarget{classobject_afeb4c581ea86494f8063f286664adbe6}\label{classobject_afeb4c581ea86494f8063f286664adbe6}} 
+\index{object@{object}!move\+\_\+up@{move\+\_\+up}}
+\index{move\+\_\+up@{move\+\_\+up}!object@{object}}
+\subsubsection{\texorpdfstring{move\+\_\+up()}{move\_up()}}
+{\footnotesize\ttfamily void object\+::move\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subtracts one from x. 
+
+Moves the object up by one unit subtracting one to the x position \mbox{\Hypertarget{classobject_a303b713cf517cebb6b56476facc9022f}\label{classobject_a303b713cf517cebb6b56476facc9022f}} 
+\index{object@{object}!set\+\_\+pos@{set\+\_\+pos}}
+\index{set\+\_\+pos@{set\+\_\+pos}!object@{object}}
+\subsubsection{\texorpdfstring{set\+\_\+pos()}{set\_pos()}}
+{\footnotesize\ttfamily void object\+::set\+\_\+pos (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set position to given coordinates. 
+
+This function sets the position of the object to the given x, y coordinates \mbox{\Hypertarget{classobject_a0520ed913c351f67b3abc458a5896833}\label{classobject_a0520ed913c351f67b3abc458a5896833}} 
+\index{object@{object}!set\+\_\+x@{set\+\_\+x}}
+\index{set\+\_\+x@{set\+\_\+x}!object@{object}}
+\subsubsection{\texorpdfstring{set\+\_\+x()}{set\_x()}}
+{\footnotesize\ttfamily virtual void object\+::set\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{u\+\_\+x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+sets x 
+
+sets x position of the object \mbox{\Hypertarget{classobject_af2831ab422aedd6671aa894d78bb5288}\label{classobject_af2831ab422aedd6671aa894d78bb5288}} 
+\index{object@{object}!set\+\_\+y@{set\+\_\+y}}
+\index{set\+\_\+y@{set\+\_\+y}!object@{object}}
+\subsubsection{\texorpdfstring{set\+\_\+y()}{set\_y()}}
+{\footnotesize\ttfamily virtual void object\+::set\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{u\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+sets y 
+
+sets y position of the objects 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classobject_a7fc771aa9781b84b7ee9d222c9bfa605}\label{classobject_a7fc771aa9781b84b7ee9d222c9bfa605}} 
+\index{object@{object}!pos\+XY@{pos\+XY}}
+\index{pos\+XY@{pos\+XY}!object@{object}}
+\subsubsection{\texorpdfstring{pos\+XY}{posXY}}
+{\footnotesize\ttfamily \hyperlink{classxy}{xy} object\+::pos\+XY\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+position of object 
+
+x and y position of an object 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Matrix\+Engine/\hyperlink{object_8h}{object.\+h}\item 
+src/\+Matrix\+Engine/object.\+cpp\end{DoxyCompactItemize}

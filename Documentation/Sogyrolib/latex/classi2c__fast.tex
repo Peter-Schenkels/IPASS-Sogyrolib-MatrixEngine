@@ -1,0 +1,86 @@
+\hypertarget{classi2c__fast}{}\section{i2c\+\_\+fast Class Reference}
+\label{classi2c__fast}\index{i2c\+\_\+fast@{i2c\+\_\+fast}}
+
+
+hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda Decorator  
+
+
+
+
+{\ttfamily \#include $<$i2c\+\_\+fast.\+hpp$>$}
+
+
+
+Inheritance diagram for i2c\+\_\+fast\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classi2c__fast__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for i2c\+\_\+fast\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classi2c__fast__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classi2c__fast_a2409918a4b030ad310e9b145e1056eb2}{i2c\+\_\+fast} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&bus, uint8\+\_\+t \&address)
+\begin{DoxyCompactList}\small\item\em Constructor of hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda Decorator. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{classi2c__fast_a90f3dca1f0688fc2ae567c6ee8b6c42e}{read} (uint8\+\_\+t \&data)
+\begin{DoxyCompactList}\small\item\em Writes data from givin byte to read data into givin byte. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{classi2c__fast_a51ad18b2edee256e274ee8f014369b73}{read} (uint8\+\_\+t \&register\+\_\+address, uint8\+\_\+t \&storage)
+\begin{DoxyCompactList}\small\item\em Writes data from register byte byte to read data into givin storage byte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda Decorator 
+
+This class is hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda Decorator used to write shorter lines of codes to write and read bytes with a givin address. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classi2c__fast_a2409918a4b030ad310e9b145e1056eb2}\label{classi2c__fast_a2409918a4b030ad310e9b145e1056eb2}} 
+\index{i2c\+\_\+fast@{i2c\+\_\+fast}!i2c\+\_\+fast@{i2c\+\_\+fast}}
+\index{i2c\+\_\+fast@{i2c\+\_\+fast}!i2c\+\_\+fast@{i2c\+\_\+fast}}
+\subsubsection{\texorpdfstring{i2c\+\_\+fast()}{i2c\_fast()}}
+{\footnotesize\ttfamily i2c\+\_\+fast\+::i2c\+\_\+fast (\begin{DoxyParamCaption}\item[{hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&}]{bus,  }\item[{uint8\+\_\+t \&}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda Decorator. 
+
+This is the constructor of the hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda Decorator, this constructor initialises the i2c\+\_\+bus and givin address. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classi2c__fast_a90f3dca1f0688fc2ae567c6ee8b6c42e}\label{classi2c__fast_a90f3dca1f0688fc2ae567c6ee8b6c42e}} 
+\index{i2c\+\_\+fast@{i2c\+\_\+fast}!read@{read}}
+\index{read@{read}!i2c\+\_\+fast@{i2c\+\_\+fast}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint8\+\_\+t i2c\+\_\+fast\+::read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes data from givin byte to read data into givin byte. 
+
+This function writes data from givin byte to read data into givin byte \mbox{\Hypertarget{classi2c__fast_a51ad18b2edee256e274ee8f014369b73}\label{classi2c__fast_a51ad18b2edee256e274ee8f014369b73}} 
+\index{i2c\+\_\+fast@{i2c\+\_\+fast}!read@{read}}
+\index{read@{read}!i2c\+\_\+fast@{i2c\+\_\+fast}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint8\+\_\+t i2c\+\_\+fast\+::read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \&}]{register\+\_\+address,  }\item[{uint8\+\_\+t \&}]{storage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Writes data from register byte byte to read data into givin storage byte. 
+
+This function writes data from register address byte to read data into givin storage byte. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Sogyrolib/\+Slave/\hyperlink{i2c__fast_8hpp}{i2c\+\_\+fast.\+hpp}\end{DoxyCompactItemize}

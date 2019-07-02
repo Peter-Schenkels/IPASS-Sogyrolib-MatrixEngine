@@ -1,0 +1,46 @@
+I\+P\+A\+SS Project Hoge School Utrecht H\+BO I\+C\+T-\/\+TI
+
+Library for the {\bfseries L3\+G4200D} gryoscope and the {\bfseries M\+H7219 Led Matrix} including a Game making toolset.
+
+By Peter Schenkels 2019
+
+
+
+ \subsection*{Description Sogyrolib\+:}
+
+Interface for the {\bfseries L3\+G4200D} with a twist. The Chip is connected to a seperate Arudino Nano. This Arduino Nano is used for getting the Axis. The {\bfseries Slave Arduino Nano} is connected via a {\bfseries S\+PI} bus to a {\bfseries Master Arduino}. The Slave Arduino Nano focusses on getting the {\bfseries D\+PS} (Degrees Per Second) values from the chip and keeping track of it\textquotesingle{}s {\bfseries own axis} in {\bfseries degrees}. The Master Arudino can acces these values by sending {\bfseries command bytes} to the Arduino Nano.
+
+\subsubsection*{How to use it\+:}
+
+{\bfseries Hwlib} is needed for this project, consult this page for more {\bfseries information}\+: \href{https://github.com/wovo/installers}{\tt https\+://github.\+com/wovo/installers}
+
+The {\bfseries Slave Arduino Nano} needs to be connected to a {\bfseries Master Arduino Due} via {\bfseries S\+PI}. {\bfseries Flash} the slave code in the $\ast$/src/\+Slave\+\_\+\+Gyroscope$\ast$ Directory on to the Slave Arduino Nano. I have profided a {\bfseries test} in the \char`\"{}tests\char`\"{} directory.
+
+{\bfseries Pin} connections between the {\bfseries Slave} and the {\bfseries Master}.
+
+For the {\bfseries Slave} you need to connect these {\bfseries pins}\+:
+
+
+\begin{DoxyItemize}
+\item Pin {\bfseries d4} is for the {\bfseries clock} pin.
+\item Pin {\bfseries d5} is for the {\bfseries mosi} pin.
+\item Pin {\bfseries d6} is for the {\bfseries miso} pin.
+\item Pin {\bfseries d7} is for the {\bfseries cs} pin.
+\end{DoxyItemize}
+
+note\+: $\sim$$\sim$these pins can be changed by manually modifying the class$\sim$$\sim$
+
+For the {\bfseries Master} you can choose whatever suits your mood.
+
+Run this {\bfseries command} in the {\bfseries root} directory of this project for the Doxygen documentation\+: {\itshape Doxygen}
+
+See the Doxygen documentation for more information on how to use this library.
+
+\subsubsection*{What you need\+:}
+
+
+\begin{DoxyItemize}
+\item Arduino Due (Master)
+\item Arduino Nano (Slave)
+\item L3\+G4200(\+D) Gyroscope 
+\end{DoxyItemize}

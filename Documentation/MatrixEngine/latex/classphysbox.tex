@@ -1,0 +1,64 @@
+\hypertarget{classphysbox}{}\section{physbox Class Reference}
+\label{classphysbox}\index{physbox@{physbox}}
+
+
+Physics engine.  
+
+
+
+
+{\ttfamily \#include $<$physics.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classphysbox_ab6ae32c018841713b135a1fc511b9518}{calculate\+\_\+movement} (\hyperlink{classentity}{entity} \&\hyperlink{classobject}{object}, \hyperlink{classfield}{field} \&scene)
+\begin{DoxyCompactList}\small\item\em Calculates the next movent of entity. \end{DoxyCompactList}\item 
+void \hyperlink{classphysbox_aacb7573b68494f352edb2697c5124571}{calculate\+\_\+gravity} (\hyperlink{classentity}{entity} \&\hyperlink{classobject}{object}, \hyperlink{classfield}{field} \&scene)
+\begin{DoxyCompactList}\small\item\em Calculates gravity on object. \end{DoxyCompactList}\item 
+void \hyperlink{classphysbox_a1e1ca37a18b94e3fab074120e65f7e03}{calculate\+\_\+bounce} (\hyperlink{classentity}{entity} \&\hyperlink{classobject}{object}, \hyperlink{classfield}{field} \&scene)
+\begin{DoxyCompactList}\small\item\em Calculates bounce on object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Physics engine. 
+
+physics engine that calculates basic stuff like gravity speed bouncing and other types of movement 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classphysbox_a1e1ca37a18b94e3fab074120e65f7e03}\label{classphysbox_a1e1ca37a18b94e3fab074120e65f7e03}} 
+\index{physbox@{physbox}!calculate\+\_\+bounce@{calculate\+\_\+bounce}}
+\index{calculate\+\_\+bounce@{calculate\+\_\+bounce}!physbox@{physbox}}
+\subsubsection{\texorpdfstring{calculate\+\_\+bounce()}{calculate\_bounce()}}
+{\footnotesize\ttfamily void physbox\+::calculate\+\_\+bounce (\begin{DoxyParamCaption}\item[{\hyperlink{classentity}{entity} \&}]{object,  }\item[{\hyperlink{classfield}{field} \&}]{scene }\end{DoxyParamCaption})}
+
+
+
+Calculates bounce on object. 
+
+This function calculates if the given object should be bouncing in given scene \mbox{\Hypertarget{classphysbox_aacb7573b68494f352edb2697c5124571}\label{classphysbox_aacb7573b68494f352edb2697c5124571}} 
+\index{physbox@{physbox}!calculate\+\_\+gravity@{calculate\+\_\+gravity}}
+\index{calculate\+\_\+gravity@{calculate\+\_\+gravity}!physbox@{physbox}}
+\subsubsection{\texorpdfstring{calculate\+\_\+gravity()}{calculate\_gravity()}}
+{\footnotesize\ttfamily void physbox\+::calculate\+\_\+gravity (\begin{DoxyParamCaption}\item[{\hyperlink{classentity}{entity} \&}]{object,  }\item[{\hyperlink{classfield}{field} \&}]{scene }\end{DoxyParamCaption})}
+
+
+
+Calculates gravity on object. 
+
+This function calculates the gravity physics of the given object in given scene. \mbox{\Hypertarget{classphysbox_ab6ae32c018841713b135a1fc511b9518}\label{classphysbox_ab6ae32c018841713b135a1fc511b9518}} 
+\index{physbox@{physbox}!calculate\+\_\+movement@{calculate\+\_\+movement}}
+\index{calculate\+\_\+movement@{calculate\+\_\+movement}!physbox@{physbox}}
+\subsubsection{\texorpdfstring{calculate\+\_\+movement()}{calculate\_movement()}}
+{\footnotesize\ttfamily void physbox\+::calculate\+\_\+movement (\begin{DoxyParamCaption}\item[{\hyperlink{classentity}{entity} \&}]{object,  }\item[{\hyperlink{classfield}{field} \&}]{scene }\end{DoxyParamCaption})}
+
+
+
+Calculates the next movent of entity. 
+
+This function calculates the next movement of the given object in a given scene. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Matrix\+Engine/\hyperlink{physics_8h}{physics.\+h}\item 
+src/\+Matrix\+Engine/physics.\+cpp\end{DoxyCompactItemize}

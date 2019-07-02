@@ -1,0 +1,184 @@
+\hypertarget{classsogyro}{}\section{sogyro Class Reference}
+\label{classsogyro}\index{sogyro@{sogyro}}
+
+
+Class that interfaces the arduino connected to a gyro scope.  
+
+
+
+
+{\ttfamily \#include $<$l3g4\+\_\+master.\+hpp$>$}
+
+
+
+Inheritance diagram for sogyro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classsogyro__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsogyro_ac7d4d6dd2fb21e10e9ad95262520635b}{sogyro} (hwlib\+::spi\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+sclk\+\_\+mosi\+\_\+miso \&bus, hwlib\+::target\+::pin\+\_\+out \&cs)
+\begin{DoxyCompactList}\small\item\em Constructs an interface for the Slave Arduino Nano. \end{DoxyCompactList}\item 
+\hyperlink{classsogyro_a43e6a4ab150faccd436e63c9f41c885d}{sogyro} (hwlib\+::spi\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+sclk\+\_\+mosi\+\_\+miso \&bus, hwlib\+::target\+::pin\+\_\+out \&cs, int mode)
+\begin{DoxyCompactList}\small\item\em Constructs an interface for the Slave Arduino Nano. \end{DoxyCompactList}\item 
+int \hyperlink{classsogyro_ae8d4d35c21a057146898ee56ccbfca70}{fast\+\_\+read} (uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em function to read and write data. \end{DoxyCompactList}\item 
+int \hyperlink{classsogyro_a65a601a9536aefcad18969ef5969fe11}{fast\+\_\+read} (uint8\+\_\+t high, uint8\+\_\+t low)
+\begin{DoxyCompactList}\small\item\em function to read and write data. \end{DoxyCompactList}\item 
+int \hyperlink{classsogyro_a69d818342aa6a4688afc26d8db62af33}{get\+\_\+gyro\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em Returns gyro x axis data in degrees. \end{DoxyCompactList}\item 
+int \hyperlink{classsogyro_a5d0a23dd18a82284625c479df3d1bb9b}{get\+\_\+gyro\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em Returns gyro y axis data in degrees. \end{DoxyCompactList}\item 
+int \hyperlink{classsogyro_a71e8f90b8fcb6a3351600a1dda5c8923}{get\+\_\+gyro\+\_\+z} ()
+\begin{DoxyCompactList}\small\item\em Returns gyro z axis data in degrees. \end{DoxyCompactList}\item 
+int \hyperlink{classsogyro_acad639f73b31704bd60dcb81ca4d8ed1}{get\+\_\+dps\+\_\+x} ()
+\begin{DoxyCompactList}\small\item\em Returns gyro x dps data in degrees per second. \end{DoxyCompactList}\item 
+int \hyperlink{classsogyro_add0d7fc633b0410127e243f2eba19f2d}{get\+\_\+dps\+\_\+y} ()
+\begin{DoxyCompactList}\small\item\em Returns gyro y dps data in degrees per second. \end{DoxyCompactList}\item 
+int \hyperlink{classsogyro_acaaac40f021d89a77c093b2303e6e79c}{get\+\_\+dps\+\_\+z} ()
+\begin{DoxyCompactList}\small\item\em Returns gyro z dps data in degrees per second. \end{DoxyCompactList}\item 
+int \hyperlink{classsogyro_a762e79e3874507ba58910d90a115ea70}{get\+\_\+temp} ()
+\begin{DoxyCompactList}\small\item\em Returns temprature data in degrees. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsogyro_ac253f3fa45e48f2f31a6211bb5c60894}\label{classsogyro_ac253f3fa45e48f2f31a6211bb5c60894}} 
+void \hyperlink{classsogyro_ac253f3fa45e48f2f31a6211bb5c60894}{set\+\_\+scale} (int scale)
+\begin{DoxyCompactList}\small\item\em Changes the scale of the gyroscope  This function is used to change the gyroscope scale to either 250, 500 or 2000. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsogyro_a8a0a938e79e5ab36803c4922fe88bbcb}\label{classsogyro_a8a0a938e79e5ab36803c4922fe88bbcb}} 
+int \hyperlink{classsogyro_a8a0a938e79e5ab36803c4922fe88bbcb}{wake} ()
+\begin{DoxyCompactList}\small\item\em Wakes up the gyroscope  This function is used to wakes up the gyroscope from sleep mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsogyro_a8f4d69c173d5552e22ce9e79bca19d3f}\label{classsogyro_a8f4d69c173d5552e22ce9e79bca19d3f}} 
+int \hyperlink{classsogyro_a8f4d69c173d5552e22ce9e79bca19d3f}{sleep} ()
+\begin{DoxyCompactList}\small\item\em Tugs in the gyroscope  This function is used to to set the gyroscope to sleep mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsogyro_a8c5d413a3026f0a80fb7929617349686}\label{classsogyro_a8c5d413a3026f0a80fb7929617349686}} 
+void {\bfseries reset} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that interfaces the arduino connected to a gyro scope. 
+
+A class that interfaces the Slave Arduino Nano through a spi bus that is dedicated only to the Arduino Nano. The Arduino Nano is connected to a L3\+G4200 gyroscope. The functions of this class send register adresses to the Arduino Nano and then Arduino Nano returns the correpsonding data. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsogyro_ac7d4d6dd2fb21e10e9ad95262520635b}\label{classsogyro_ac7d4d6dd2fb21e10e9ad95262520635b}} 
+\index{sogyro@{sogyro}!sogyro@{sogyro}}
+\index{sogyro@{sogyro}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{sogyro()}{sogyro()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sogyro\+::sogyro (\begin{DoxyParamCaption}\item[{hwlib\+::spi\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+sclk\+\_\+mosi\+\_\+miso \&}]{bus,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{cs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an interface for the Slave Arduino Nano. 
+
+This constructor creates an interface for the Slave Arduino Nano using a spi bus and a enabler pin. \mbox{\Hypertarget{classsogyro_a43e6a4ab150faccd436e63c9f41c885d}\label{classsogyro_a43e6a4ab150faccd436e63c9f41c885d}} 
+\index{sogyro@{sogyro}!sogyro@{sogyro}}
+\index{sogyro@{sogyro}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{sogyro()}{sogyro()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sogyro\+::sogyro (\begin{DoxyParamCaption}\item[{hwlib\+::spi\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+sclk\+\_\+mosi\+\_\+miso \&}]{bus,  }\item[{hwlib\+::target\+::pin\+\_\+out \&}]{cs,  }\item[{int}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an interface for the Slave Arduino Nano. 
+
+This constructor creates an interface for the Slave Arduino Nano using a spi bus and a enabler pin and also sets the scale for the gyroscope. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsogyro_ae8d4d35c21a057146898ee56ccbfca70}\label{classsogyro_ae8d4d35c21a057146898ee56ccbfca70}} 
+\index{sogyro@{sogyro}!fast\+\_\+read@{fast\+\_\+read}}
+\index{fast\+\_\+read@{fast\+\_\+read}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{fast\+\_\+read()}{fast\_read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int sogyro\+::fast\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+function to read and write data. 
+
+A function used to write 1 byte of data to read 1 byte of data. \mbox{\Hypertarget{classsogyro_a65a601a9536aefcad18969ef5969fe11}\label{classsogyro_a65a601a9536aefcad18969ef5969fe11}} 
+\index{sogyro@{sogyro}!fast\+\_\+read@{fast\+\_\+read}}
+\index{fast\+\_\+read@{fast\+\_\+read}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{fast\+\_\+read()}{fast\_read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int sogyro\+::fast\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{high,  }\item[{uint8\+\_\+t}]{low }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+function to read and write data. 
+
+A function used to write 2 byte of data to read 2 bytes of data. The function merges the to bytes of data and then return them as an uint16\+\_\+t value. \mbox{\Hypertarget{classsogyro_acad639f73b31704bd60dcb81ca4d8ed1}\label{classsogyro_acad639f73b31704bd60dcb81ca4d8ed1}} 
+\index{sogyro@{sogyro}!get\+\_\+dps\+\_\+x@{get\+\_\+dps\+\_\+x}}
+\index{get\+\_\+dps\+\_\+x@{get\+\_\+dps\+\_\+x}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{get\+\_\+dps\+\_\+x()}{get\_dps\_x()}}
+{\footnotesize\ttfamily int sogyro\+::get\+\_\+dps\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns gyro x dps data in degrees per second. 
+
+This function is used to recieve the current degrees per second x value from the slave Arduino Nano. \mbox{\Hypertarget{classsogyro_add0d7fc633b0410127e243f2eba19f2d}\label{classsogyro_add0d7fc633b0410127e243f2eba19f2d}} 
+\index{sogyro@{sogyro}!get\+\_\+dps\+\_\+y@{get\+\_\+dps\+\_\+y}}
+\index{get\+\_\+dps\+\_\+y@{get\+\_\+dps\+\_\+y}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{get\+\_\+dps\+\_\+y()}{get\_dps\_y()}}
+{\footnotesize\ttfamily int sogyro\+::get\+\_\+dps\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns gyro y dps data in degrees per second. 
+
+This function is used to recieve the current degrees per second y value from the slave Arduino Nano. \mbox{\Hypertarget{classsogyro_acaaac40f021d89a77c093b2303e6e79c}\label{classsogyro_acaaac40f021d89a77c093b2303e6e79c}} 
+\index{sogyro@{sogyro}!get\+\_\+dps\+\_\+z@{get\+\_\+dps\+\_\+z}}
+\index{get\+\_\+dps\+\_\+z@{get\+\_\+dps\+\_\+z}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{get\+\_\+dps\+\_\+z()}{get\_dps\_z()}}
+{\footnotesize\ttfamily int sogyro\+::get\+\_\+dps\+\_\+z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns gyro z dps data in degrees per second. 
+
+This function is used to recieve the current degrees per second z value from the slave Arduino Nano. \mbox{\Hypertarget{classsogyro_a69d818342aa6a4688afc26d8db62af33}\label{classsogyro_a69d818342aa6a4688afc26d8db62af33}} 
+\index{sogyro@{sogyro}!get\+\_\+gyro\+\_\+x@{get\+\_\+gyro\+\_\+x}}
+\index{get\+\_\+gyro\+\_\+x@{get\+\_\+gyro\+\_\+x}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{get\+\_\+gyro\+\_\+x()}{get\_gyro\_x()}}
+{\footnotesize\ttfamily int sogyro\+::get\+\_\+gyro\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns gyro x axis data in degrees. 
+
+This function is used to recieve the current gyro x axis from the slave Arduino Nano \mbox{\Hypertarget{classsogyro_a5d0a23dd18a82284625c479df3d1bb9b}\label{classsogyro_a5d0a23dd18a82284625c479df3d1bb9b}} 
+\index{sogyro@{sogyro}!get\+\_\+gyro\+\_\+y@{get\+\_\+gyro\+\_\+y}}
+\index{get\+\_\+gyro\+\_\+y@{get\+\_\+gyro\+\_\+y}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{get\+\_\+gyro\+\_\+y()}{get\_gyro\_y()}}
+{\footnotesize\ttfamily int sogyro\+::get\+\_\+gyro\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns gyro y axis data in degrees. 
+
+This function is used to recieve the current gyro y axis from the slave Arduino Nano \mbox{\Hypertarget{classsogyro_a71e8f90b8fcb6a3351600a1dda5c8923}\label{classsogyro_a71e8f90b8fcb6a3351600a1dda5c8923}} 
+\index{sogyro@{sogyro}!get\+\_\+gyro\+\_\+z@{get\+\_\+gyro\+\_\+z}}
+\index{get\+\_\+gyro\+\_\+z@{get\+\_\+gyro\+\_\+z}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{get\+\_\+gyro\+\_\+z()}{get\_gyro\_z()}}
+{\footnotesize\ttfamily int sogyro\+::get\+\_\+gyro\+\_\+z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns gyro z axis data in degrees. 
+
+This function is used to recieve the current gyro z axis from the slave Arduino Nano \mbox{\Hypertarget{classsogyro_a762e79e3874507ba58910d90a115ea70}\label{classsogyro_a762e79e3874507ba58910d90a115ea70}} 
+\index{sogyro@{sogyro}!get\+\_\+temp@{get\+\_\+temp}}
+\index{get\+\_\+temp@{get\+\_\+temp}!sogyro@{sogyro}}
+\subsubsection{\texorpdfstring{get\+\_\+temp()}{get\_temp()}}
+{\footnotesize\ttfamily int sogyro\+::get\+\_\+temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns temprature data in degrees. 
+
+This function is used to recieve the current temprature from the slave Arduino Nano. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Sogyrolib/\+Master/\hyperlink{l3g4__master_8hpp}{l3g4\+\_\+master.\+hpp}\end{DoxyCompactItemize}
